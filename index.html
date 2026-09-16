@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CCAO-F Prep Portal | Claude Certified Associate</title>
+  <meta name="description" content="Interactive exam prep portal for the Claude Certified Associate – Foundations certification." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-brand">
+    <div class="logo">C</div>
+    <span>CCAO-F Prep Portal</span>
+  </div>
+  <div class="nav-links">
+    <button class="nav-link active" data-page="dashboard">🏠 Certification Info</button>
+    <button class="nav-link" data-page="knowledge">📚 Knowledge Base</button>
+    <button class="nav-link" data-page="exams">📝 Practice Exams</button>
+    <button class="nav-link" data-page="scores">🏆 My Scores</button>
+  </div>
+  <div class="nav-right">
+    <span class="live-badge">🟢 localhost</span>
+  </div>
+</nav>
+
+<main id="app">
+  <!-- Pages injected by JS -->
+</main>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal">
+    <div class="modal-title" id="modal-title"></div>
+    <div class="modal-text" id="modal-text"></div>
+    <div class="modal-actions">
+      <button class="btn btn-outline" id="modal-cancel">Cancel</button>
+      <button class="btn btn-primary" id="modal-confirm">Confirm</button>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<!-- Loading -->
+<div class="loading-overlay" id="loading-overlay">
+  <div class="loading-spinner"></div>
+  <div class="loading-text">Loading exam...</div>
+</div>
+
+<script type="module" src="/main.js"></script>
+</body>
+</html>
